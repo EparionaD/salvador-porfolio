@@ -1,0 +1,126 @@
+@import '@/styles/_styles.scss';
+
+.navbar {
+  padding: 0 1.5rem;
+  background-color: $colorBlanco;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include desktop {
+    padding: 0 3.5rem;
+  }
+  &__container {
+    @include desktop {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__button {
+    z-index: 3;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__burger {
+    width: 100%;
+    &::after,
+    &::before {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50%;
+      margin: auto;
+      background-color: black;
+      position: relative;
+      transition: transform 0.3s;
+    }
+    &::after {
+      top: -5px;
+    }
+    &::before {
+      top: 5px;
+    }
+  }
+  &__links {
+    display: none;
+    @include desktop {
+      padding: 1rem 0;
+      display: flex;
+      gap: 1.25rem;
+    }
+  }
+  &__link {
+    font-family: var(--font-jost);
+    color: $colorBlanco;
+    transition: color 0.3s ease-in;
+    &:hover {
+      color: $colorVerdeClaro;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+}
+
+.burgerActive {
+  &::after {
+    transform: rotate(45deg);
+    top: -2px;
+  }
+  &::before {
+    transform: rotate(-45deg);
+    top: 1px;
+  }
+}
+
+.navbarMobile {
+  z-index: 2;
+  height: 100vh;
+  background-color: $colorBlanco;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 3rem 2rem;
+  justify-content: space-between;
+  //   @include desktop {
+  //     width: 50%;
+  //   }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    align-items: center;
+    padding-bottom: 8rem;
+  }
+  &__link {
+    color: black;
+    text-transform: capitalize;
+  }
+  &__social {
+    color: $colorBlanco;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    gap: 1rem;
+  }
+  &__title {
+    font-weight: 700;
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+}
