@@ -397,3 +397,15 @@ video {
 [hidden] {
   display: none;
 }
+
+.customModal {
+  padding: 0;
+  width: 80%;
+  height: auto;
+  @media only screen and (min-width: 992px) {
+    height: 60%;
+  }
+  @media only screen and (min-width: 1800px) {
+    width: 90%;
+  }
+}

@@ -54,11 +54,10 @@
     }
   }
   &__link {
-    font-family: var(--font-jost);
     color: $colorBlanco;
     transition: color 0.3s ease-in;
     &:hover {
-      color: $colorVerdeClaro;
+      color: $colorRojo;
     }
   }
   &__title {

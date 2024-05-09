@@ -1,0 +1,11 @@
+@import '@/styles/_styles.scss';
+
+.button {
+  padding: 0.5rem 1.25rem;
+  background-color: $colorRojo;
+  display: inline-block;
+  color: $colorBlanco;
+  width: fit-content;
+  text-transform: uppercase;
+  font-weight: bolder;
+}

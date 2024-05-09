@@ -1,7 +1,20 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './hero.module.scss';
+import { Button } from '@/components';
+import { useState } from 'react';
+
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+
+import '@/styles/global.css';
 
 const Hero = () => {
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
   return (
     <article className={styles.hero}>
       <div className={styles.hero__containerLogo}>
@@ -10,10 +23,32 @@ const Hero = () => {
           width={1559}
           height={502}
           alt='Logo Ayahuanco'
+          className={styles.hero__img}
         />
         <p>Un cortometraje de Salvador Pariona</p>
       </div>
       <div className={styles.logos}>
+        <div className={styles.logos__button}>
+          <div onClick={onOpenModal}>
+            <Button />
+          </div>
+          <Modal
+            open={open}
+            onClose={onCloseModal}
+            center
+            classNames={{
+              modal: 'customModal',
+            }}
+          >
+            <iframe
+              width='100%'
+              height='100%'
+              src='https://www.youtube.com/embed/gKQ-Ue2GuM4?si=dzwqoaNmSWlQWXQG'
+              title='YouTube video player'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            ></iframe>
+          </Modal>
+        </div>
         <div className={styles.logos__container}>
           <Image
             src='https://res.cloudinary.com/eparionad/image/upload/v1709691730/ayahuanco/Imagen_pegada_2-removebg-preview_ajfpdb.png'
