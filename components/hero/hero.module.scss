@@ -22,7 +22,9 @@
   }
   @include desktop-xxlarge {
     height: 740px;
+    padding: 6rem 5.5rem;
   }
+
   &__containerLogo {
     position: relative;
     color: $colorBlanco;

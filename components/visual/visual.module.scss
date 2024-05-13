@@ -1,0 +1,44 @@
+@import '@/styles/_styles.scss';
+
+.visual {
+  cursor: pointer;
+  position: relative;
+  color: $colorBlanco;
+  &:hover > .visual__text {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__img {
+    transition: all 0.3s ease-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    padding: 1.25rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title,
+  &__type,
+  &__rol {
+    text-align: center;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  &__type,
+  &__rol {
+    font-size: 0.9rem;
+  }
+}

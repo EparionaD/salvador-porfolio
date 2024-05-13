@@ -55,6 +55,9 @@ const Navbar = () => {
                   href={link}
                   key={id}
                   className={styles.navbarMobile__link}
+                  onClick={() => {
+                    setIsActive(!isActive);
+                  }}
                 >
                   {title}
                 </Link>

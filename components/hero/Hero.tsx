@@ -30,7 +30,7 @@ const Hero = () => {
       <div className={styles.logos}>
         <div className={styles.logos__button}>
           <div onClick={onOpenModal}>
-            <Button />
+            <Button url='#' title='ver tráiler' />
           </div>
           <Modal
             open={open}

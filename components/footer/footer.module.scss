@@ -1,0 +1,36 @@
+@import '@/styles/_styles.scss';
+
+.footer {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__img {
+    width: 110px;
+    height: auto;
+    @include desktop {
+      width: 175px;
+    }
+    @include desktop-large {
+      width: 225px;
+    }
+    @include desktop-xlarge {
+      width: 275px;
+    }
+  }
+  &__container {
+    margin-top: 0.75rem;
+  }
+  &__text {
+    text-align: center;
+    @include desktop {
+      font-size: 1.1rem;
+    }
+    @include desktop-large {
+      font-size: 1.3rem;
+    }
+    @include desktop-xlarge {
+      font-size: 1.5rem;
+    }
+  }
+}

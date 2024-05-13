@@ -1,3 +1,13 @@
 export { default as Navbar } from './navbar/Navbar';
 export { default as Hero } from './hero/Hero';
 export { default as Button } from './button/Button';
+export { default as Footer } from './footer/Footer';
+export { default as Contacto } from './contacto/Contacto';
+export { default as Title } from './title/Title';
+export { default as Salvador } from './salvador/Salvador';
+export { default as Portafolio } from './portafolio/Portafolio';
+export { default as Audiovisual } from './audiovisual/Audiovisual';
+export { default as Visual } from './visual/Visual';
+export { default as Design } from './design/Design';
+export { default as Gestion } from './gestion/Gestion';
+export { default as Card } from './card/Card';
