@@ -35,6 +35,15 @@
       height: auto;
     }
   }
+  &__background {
+    padding-top: 3rem;
+    height: 100%;
+    width: auto;
+  }
+  &__close {
+    color: $colorBlanco;
+    font-size: 2rem;
+  }
 }
 
 .logos {

@@ -27,11 +27,19 @@ const Salvador = () => {
         producción cinematográfica y UX Design.
       </p>
       <div className={styles.salvador__icons}>
-        <Link href='/' className={styles.salvador__icon}>
-          <MdMail />
+        <Link
+          href='mailto:sdjpariona@gmail.com'
+          className={styles.salvador__icon}
+          target='_blank'
+        >
+          <MdMail className={styles.salvador__ic} />
         </Link>
-        <Link href='/' className={styles.salvador__icon}>
-          <FaLinkedin />
+        <Link
+          href='https://www.linkedin.com/in/salvador-pariona-08372653/'
+          className={styles.salvador__icon}
+          target='_blank'
+        >
+          <FaLinkedin className={styles.salvador__ic} />
         </Link>
       </div>
     </article>

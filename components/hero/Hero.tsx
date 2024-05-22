@@ -1,9 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import styles from './hero.module.scss';
-import { Button } from '@/components';
 import { useState } from 'react';
+
+import { Button } from '@/components';
+import { PiArrowElbowUpLeftBold } from 'react-icons/pi';
+
+import styles from './hero.module.scss';
 
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
@@ -15,6 +18,8 @@ const Hero = () => {
 
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
+
+  const closeIcon = <PiArrowElbowUpLeftBold className={styles.hero__close} />;
   return (
     <article className={styles.hero}>
       <div className={styles.hero__containerLogo}>
@@ -36,17 +41,20 @@ const Hero = () => {
             open={open}
             onClose={onCloseModal}
             center
+            closeIcon={closeIcon}
             classNames={{
               modal: 'customModal',
             }}
           >
-            <iframe
-              width='100%'
-              height='100%'
-              src='https://www.youtube.com/embed/gKQ-Ue2GuM4?si=dzwqoaNmSWlQWXQG'
-              title='YouTube video player'
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-            ></iframe>
+            <div className={styles.hero__background}>
+              <iframe
+                width='100%'
+                height='100%'
+                src='https://www.youtube.com/embed/gKQ-Ue2GuM4?si=dzwqoaNmSWlQWXQG'
+                title='YouTube video player'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              ></iframe>
+            </div>
           </Modal>
         </div>
         <div className={styles.logos__container}>

@@ -8,4 +8,8 @@
   width: fit-content;
   text-transform: uppercase;
   font-weight: bolder;
+  transition: background 0.3s ease-in;
+  &:hover {
+    background-color: $colorRojoClaro;
+  }
 }

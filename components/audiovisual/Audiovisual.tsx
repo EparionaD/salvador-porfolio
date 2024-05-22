@@ -19,6 +19,7 @@ const Audiovisual = () => {
             type={item.type}
             rol={item.rol}
             tam={item.tam}
+            url={item.url}
           />
         ))}
       </div>

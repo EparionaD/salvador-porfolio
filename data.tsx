@@ -62,6 +62,7 @@ export const itemsVisual = [
     image:
       'https://res.cloudinary.com/eparionad/image/upload/v1709825521/ayahuanco/AYAHUANCO_TRAILER.00_16_17_01.Imagen_fija108_szvrha.png',
     title: 'AYAHUANCO',
+    url: 'https://www.youtube.com/embed/gKQ-Ue2GuM4?si=ZJr9RTBWUQ9xvrzH',
     year: '(2023)',
     type: 'Cortometraje',
     rol: 'Director',
@@ -71,8 +72,9 @@ export const itemsVisual = [
     id: 2,
     area: 'img2',
     image:
-      'https://res.cloudinary.com/eparionad/image/upload/v1709825521/ayahuanco/AYAHUANCO_TRAILER.00_16_17_01.Imagen_fija108_szvrha.png',
+      'https://res.cloudinary.com/eparionad/image/upload/v1716332337/salvador/contratado_njuvnz.jpg',
     title: 'CONTRATADO',
+    url: 'https://www.youtube.com/embed/j8dUwRRTQJA?si=U3T-PeqqMSHXrlRj',
     year: '(2015)',
     type: 'Cortometraje',
     rol: 'Productor',
@@ -81,8 +83,9 @@ export const itemsVisual = [
     id: 3,
     area: 'img3',
     image:
-      'https://res.cloudinary.com/eparionad/image/upload/v1709825521/ayahuanco/AYAHUANCO_TRAILER.00_16_17_01.Imagen_fija108_szvrha.png',
+      'https://res.cloudinary.com/eparionad/image/upload/v1716332338/salvador/danzaZorzal_ubryvb.jpg',
     title: 'LA DANZA DEL ZORZAL',
+    url: 'https://www.youtube.com/embed/NuTZC4i1nBs?si=unnGURSvAlyxwc4M',
     year: '(2012)',
     type: 'Documental',
     rol: 'Asistente de cámara',

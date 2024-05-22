@@ -41,4 +41,13 @@
   &__rol {
     font-size: 0.9rem;
   }
+  &__background {
+    padding-top: 3rem;
+    height: 100%;
+    width: auto;
+  }
+  &__close {
+    color: $colorBlanco;
+    font-size: 2rem;
+  }
 }

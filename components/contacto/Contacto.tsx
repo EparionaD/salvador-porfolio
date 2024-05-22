@@ -11,7 +11,11 @@ const Contacto = () => {
         {itemsContacto.map((item) => (
           <div key={item.id} className={styles.contacto__link}>
             <span className={styles.contacto__icon}>{item.icon}</span>
-            <Link href={item.link} target='_blank'>
+            <Link
+              href={item.link}
+              target='_blank'
+              className={styles.contacto__name}
+            >
               {item.name}
             </Link>
           </div>
