@@ -15,7 +15,7 @@ interface VisualProps {
   area?: string;
   image: string;
   title: string;
-  url: string;
+  url?: string;
   year?: string;
   type: string;
   rol?: string;
