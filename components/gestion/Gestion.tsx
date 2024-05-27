@@ -22,7 +22,10 @@ const Gestion = () => {
         ))}
       </div>
       <div className={styles.gestion__button}>
-        <Button url='/' title='ver cv' />
+        <Button
+          url='https://workdrive.zohoexternal.com/external/a7a2c7781be4d34e420f03e2bd0ff3a348b824ab61f15123062922e68bf2914e'
+          title='ver cv'
+        />
       </div>
     </article>
   );
